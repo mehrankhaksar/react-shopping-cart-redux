@@ -46,13 +46,13 @@ function Card({ cart, product }) {
           <div className="grid grid-cols-3 justify-items-center items-center gap-1">
             {quantityCount(selectedProducts, id) > 1 ? (
               <Button
-                styles="cart-buttons"
+                styles="cart-button"
                 onClick={() => dispatch(decreaseProduct(id))}
                 text="-"
               />
             ) : (
               <Button
-                styles="cart-buttons text-base"
+                styles="cart-button text-base"
                 onClick={() => dispatch(removeProduct(id))}
                 text={<BiTrash size={18} />}
               />
@@ -61,7 +61,7 @@ function Card({ cart, product }) {
               {quantityCount(selectedProducts, id)}
             </span>
             <Button
-              styles="cart-buttons"
+              styles="cart-button"
               onClick={() => dispatch(increaseProduct(id))}
               text="+"
             />
