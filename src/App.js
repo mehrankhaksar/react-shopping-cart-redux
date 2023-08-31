@@ -4,7 +4,7 @@ import store from "./redux/store";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
-import Layout from "./components/layout/Layout";
+import Layout from "./components/layout";
 import CartPage from "./components/templates/CartPage";
 import DetailsPage from "./components/templates/DetailsPage";
 import StorePage from "./components/templates/StorePage";
